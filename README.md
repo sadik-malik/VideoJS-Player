@@ -11,6 +11,10 @@ This extension uses the video.js library and a few plugins for playing media in 
 Follow this guide for installing extension.
 [Install Extension](https://github.com/art1mis/VideoJS-Player/wiki/Installation-Steps)
 
+## FAQ
+
+Here are [FAQ](https://github.com/art1mis/VideoJS-Player/wiki/FAQ)
+
 ## Change Logs
 
 Here are [Change Logs](https://github.com/art1mis/VideoJS-Player/wiki/Change-Logs)
