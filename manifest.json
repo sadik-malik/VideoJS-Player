@@ -1,6 +1,6 @@
 {
   "name": "VideoJS Player",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Play media files in the browser using the video.js library and a few plugins",
   "content_security_policy": "script-src 'self' blob:; object-src 'self'",
   "manifest_version": 2,
