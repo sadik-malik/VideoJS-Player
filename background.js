@@ -30,12 +30,26 @@ chrome.contextMenus.create({
   type: 'checkbox',
   checked: state.enabled
 });
+chrome.contextMenus.create({
+  contexts: ['browser_action'],
+  type: 'separator'
+});
+chrome.contextMenus.create({
+  contexts: ['browser_action'],
+  id: 'faq',
+  title: 'Read FAQ',
+  type: 'normal'
+});
 
 // Handling click on contextMenus Items
 chrome.contextMenus.onClicked.addListener((item) => {
   const { menuItemId, checked } = item;
   if (menuItemId === 'enable-disable') {
     setEnabled(checked);
+  } else if (menuItemId === 'faq') {
+    chrome.tabs.create({
+      url: 'https://github.com/art1mis/VideoJS-Player/wiki/FAQ'
+    });
   }
 });
 
