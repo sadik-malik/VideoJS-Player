@@ -11,12 +11,14 @@
     "*://*/*.webm*",
     "*://*/*.ogv*",
     "*://*/*.mov*",
+    "*://*/*.mp3",
     "tabs",
     "webRequest",
-    "webRequestBlocking"
+    "webRequestBlocking",
+    "contextMenus"
   ],
   "background": {
-    "scripts": [ "background.js"]
+    "scripts": ["background.js"]
   },
   "commands": {
     "toggle-extension": {
@@ -26,18 +28,13 @@
       "description": "Toggle Extension"
     }
   },
-  "web_accessible_resources": [
-    "player/*.css",
-    "player/*.js",
-    "player/*.html"
-  ],
+  "web_accessible_resources": ["player/*.css", "player/*.js", "player/*.html"],
   "icons": {
     "128": "icons/icon128.png"
   },
   "browser_action": {
     "default_icon": "icons/icon128.png",
-    "default_title": "VideoJS Player Options",
-    "default_popup": "popup.html"
+    "default_title": "Right click to open menu"
   },
   "omnibox": {
     "keyword": "video"

@@ -23,3 +23,4 @@ Here are [Change Logs](https://github.com/art1mis/VideoJS-Player/wiki/Change-Log
 - webm
 - ogv
 - mov
+- mp3
