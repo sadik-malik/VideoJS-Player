@@ -86,7 +86,7 @@ chrome.webRequest.onBeforeRequest.addListener(
       }
     }
   },
-  { urls: extPatternPaths(formats), types: ['main_frame'] },
+  { urls: extPatternPaths(formats), types: ['main_frame', 'sub_frame'] },
   ['blocking']
 );
 
